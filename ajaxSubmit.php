@@ -14,7 +14,7 @@ $comentario .= "Este mensaje fue enviado por: " . $nombre . " \r\n";
 $comentario .= "Su e-mail es: " . $email . " \r\n";
 $comentario .= "Su mensaje es: ". $mensaje ." \r\n";
 
-$para = 'gamg-55@hotmail.com';
+$para = 'careers@dintdigital.com';
 $asunto = 'Contacto desde pagina web';
 
 mail($para, $asunto, utf8_decode($comentario), $header);

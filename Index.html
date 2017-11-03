@@ -52,21 +52,29 @@
         </div> <!--./navbar navbar-->
 
 
-        <section id="principal" class=" text-">
+        <section id="principal" class="text-center">
 
-            <div class="container-fluid slider" style="padding: 0; position: relative;">
-            <ul>
-                <li>
-                <img src="img/Layer3.png" class="img-responsive">
-                <p>Su compañero de viaje</p>
-                </li>
-                <li>
-                <img src="img/Layer13.png" class="img-responsive">
-                <p>Su compañero de viaje</p>
-                </li>
-             </ul>
-        </div>
+        		<div id="carousel-landing" class="carousel slide" data-ride="carousel">
+        			<ol class="carousel-indicators">
+        				<li data-target="#carousel-landing" data-slide-to="0" class="active"></li>
+        				<li data-target="#carousel-landing" data-slide-to="1"></li>
+        				<li data-target="#carousel-landing" data-slide-to="2"></li>	
+        			</ol>
 
+        			<div class="carousel-inner">
+        				<div class="item active">
+        					<img src="img/layer3.png">
+        				</div>
+        				<div class="item">
+        					<img src="img/layer4.png">
+        				</div>
+        				<div class="item">
+        					<img src="img/layer5.png">
+        				</div>
+        			</div>	
+        			</div>	
+        			<a class="left carousel-control" href="#carousel-landing" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        			<a class="right carousel-control" href="#carousel-landing" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
         </section> <!-- #/principal -->
 
         <section id="paquetes">
@@ -81,7 +89,7 @@
                             <ul class="grid cs-style-3  ">
                                 <li>
                                     <figure>
-                                        <img src="img/Layer7.png" class="img-responsive">
+                                        <img src="img/Layer7.png" class="img-responsive" width="350">
                                         <figcaption>
                                             <h3>Caribe Legendario</h3>
                                             <a href="#">Mas Informacion</a>
@@ -95,7 +103,7 @@
                             <ul class="grid cs-style-3  ">
                                 <li>
                                     <figure>
-                                        <img src="img/Layer8.png" class="img-responsive">
+                                        <img src="img/Layer8.png" class="img-responsive" width="350">
                                         <figcaption>
                                             <h3>La Sele en Mexico</h3>
                                             <a href="#">Mas Informacion</a>
@@ -110,7 +118,7 @@
                             <ul class="grid cs-style-3 ">
                                 <li>
                                     <figure>
-                                        <img src="img/Layer9.png" class="img-responsive">
+                                        <img src="img/Layer9.png" class="img-responsive" width="350">
                                         <figcaption>
                                             <h3>Vacaciones en Cuba</h3>
                                             <a href="#">Mas Informacion</a>
@@ -123,7 +131,7 @@
                                 <ul class="grid cs-style-3  ">
                                     <li>
                                         <figure>
-                                            <img src="img/Layer7.png" class="img-responsive">
+                                            <img src="img/Layer7.png" class="img-responsive" width="350">
                                             <figcaption>
                                                 <h3>Caribe Legendario</h3>
                                                 <a href="#">Mas Informacion</a>
@@ -136,7 +144,7 @@
                             <ul class="grid cs-style-3  ">
                                 <li>
                                     <figure>
-                                        <img src="img/Layer8.png" class="img-responsive">
+                                        <img src="img/Layer8.png" class="img-responsive" width="350">
                                         <figcaption>
                                             <h3>La Sele en Mexico</h3>
                                             <a href="#">Mas Informacion</a>
@@ -151,7 +159,7 @@
                             <ul class="grid cs-style-3 ">
                                 <li>
                                     <figure>
-                                        <img src="img/Layer9.png" class="img-responsive">
+                                        <img src="img/Layer9.png" class="img-responsive" width="350">
                                         <figcaption>
                                             <h3>Vacaciones en Cuba</h3>
                                             <a href="#">Mas Informacion</a>
@@ -164,7 +172,7 @@
                 </div> <!-- ./container -->
         </section> <!-- #/pantallas -->
     
-        <section id="contacto" class="azulBG">
+        <section id="contacto" >
                 <h1 class="text-center">CONTACTENOS</h1>
                 <br>
                 <br>
@@ -237,20 +245,19 @@
         </section> <!-- #/somos -->
 
         <section id="footer">
-                <div class="container">
                     <div class="row text-center ">
                                 <div class="col-sm-3">
-                                        <h2 class="h2medio">QUÍENES SOMOS</h2>
+                                      <a data-scroll='' href="#somos"><h2 class="h2medio">QUÍENES SOMOS</h2></a>  
                                 </div>
 
                                 <div class="col-sm-3">
-                                        <h2 class="h2medio">SERVICIOS</h2>          
+                                      <a data-scroll='' href="#"><h2 class="h2medio">SERVICIOS</h2></a>           
                                 </div>
                                 <div class="col-sm-3">
-                                        <h2 class="h2medio">PAQUETES</h2>          
+                                      <a data-scroll='' href="#paquetes"><h2 class="h2medio">PAQUETES</h2></a>         
                                 </div>
                                 <div class="col-sm-3">
-                                        <h2 class="h2medio">CONTACTOS</h2>          
+                                       <a data-scroll='' href="#contacto"><h2 class="h2medio">CONTACTOS</h2></a>          
                                 </div>
                     </div>
                    <div style="padding-top:50px;" class="row" align="center">
@@ -263,8 +270,7 @@
                                         <p style="text-align: center;">2017.   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>         
                                 </div>
                         </div>
-                </div>
-        </section> <!-- #/app -->
+        </section> 
      
 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
